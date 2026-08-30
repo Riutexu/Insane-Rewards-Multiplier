@@ -144,7 +144,6 @@ Se engancha a `ExperienceManager` y `MoneyManager` a través de SuperBLT. Reempl
 ## Changelog
 
 ### v7.1
-- Autor actualizado a Riutexu
 - Incremento de versión
 
 ### v7.0

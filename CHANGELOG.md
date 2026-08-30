@@ -5,7 +5,6 @@ All notable changes to this project will be documented in this file.
 ## [7.1] - 2026-08-30
 
 ### Changed
-- Author updated to Riutexu
 - Version bump to 7.1
 
 ## [7.0] - 2026-08-29

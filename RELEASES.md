@@ -8,7 +8,6 @@
 
 ### Changes
 
-- Author updated to Riutexu
 - Version bump
 
 ### Install
