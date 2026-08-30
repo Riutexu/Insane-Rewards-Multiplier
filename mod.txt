@@ -1,0 +1,22 @@
+{
+	"name": "Insane Rewards Multiplier",
+	"description": "Cash x20, XP x200. Offshore and refuge coins normal. Direct function replacement.",
+	"author": "Riutexu",
+	"version": "7.1",
+	"blt_version": 2,
+	"priority": 100,
+	"hooks": [
+		{
+			"hook_id": "lib/managers/experiencemanager",
+			"script_path": "main.lua"
+		},
+		{
+			"hook_id": "lib/managers/moneymanager",
+			"script_path": "main.lua"
+		},
+		{
+			"hook_id": "lib/managers/menumanager",
+			"script_path": "main.lua"
+		}
+	]
+}
