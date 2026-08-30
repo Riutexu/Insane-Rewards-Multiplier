@@ -5,52 +5,47 @@
 <h1 align="center">Insane Rewards Multiplier</h1>
 
 <p align="center">
-  <strong>Payday 2 mod that multiplies XP and cash rewards</strong><br/>
-  <em>Created by Riutexu</em>
-</p>
-
-<p align="center">
-  <a href="README.md"><img src="https://img.shields.io/badge/English-blue?style=flat-square" alt="English" /></a>
-  <a href="README.es.md"><img src="https://img.shields.io/badge/Espa%C3%B1ol-blue?style=flat-square" alt="Español" /></a>
+  <strong>Mod de Payday 2 que multiplica las recompensas de XP y dinero</strong><br/>
+  <em>Creado por Riutexu</em>
 </p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/version-7.1-blue?style=flat-square" alt="Version" />
   <img src="https://img.shields.io/badge/Lua-5.1-000080?style=flat-square&logo=lua" alt="Lua" />
   <img src="https://img.shields.io/badge/SuperBLT-Compatible-green?style=flat-square" alt="SuperBLT" />
-  <img src="https://img.shields.io/badge/License-MIT-yellow?style=flat-square" alt="License" />
+  <img src="https://img.shields.io/badge/Licencia-MIT-yellow?style=flat-square" alt="License" />
 </p>
 
 ---
 
-## What it does
+## Qué hace
 
-Multiplies your XP and cash gains. Customize the multipliers by editing two numbers in `main.lua`.
+Multiplica tus ganancias de XP y dinero. Personaliza los multiplicadores editando dos números en `main.lua`.
 
-| Resource | Default Multiplier |
-|----------|-------------------|
-| XP (including infamy) | x200 |
-| Cash (total) | x20 |
-| Offshore | x1 (unchanged) |
+| Recurso | Multiplicador por defecto |
+|---------|--------------------------|
+| XP (incluyendo infamia) | x200 |
+| Dinero (efectivo total) | x20 |
+| Offshore | x1 (sin cambio) |
 
-## Install
+## Instalación
 
-1. Download the latest release
-2. Extract into `PAYDAY 2/mods/`
-3. Restart the game
+1. Descarga la última release
+2. Extrae en `PAYDAY 2/mods/`
+3. Reinicia el juego
 
-## Configuration
+## Configuración
 
-Open `main.lua` and change these lines:
+Abre `main.lua` y cambia estas líneas:
 
 ```lua
-local XP_MULT = 200    -- XP multiplier
-local CASH_MULT = 20   -- Cash multiplier
+local XP_MULT = 200    -- Multiplicador de XP
+local CASH_MULT = 20   -- Multiplicador de dinero
 ```
 
-## How it works
+## Cómo funciona
 
-Hooks into `ExperienceManager` and `MoneyManager` via SuperBLT. Replaces the original functions with multiplied versions. All hooks use safe function replacement — originals are preserved and called with multiplied values.
+Se engancha a `ExperienceManager` y `MoneyManager` a través de SuperBLT. Reemplaza las funciones originales con versiones multiplicadas. Todos los hooks usan reemplazo seguro de funciones — las originales se preservan y se llaman con valores multiplicados.
 
 **Hooks:**
 - `ExperienceManager:give_experience`
@@ -72,21 +67,21 @@ Hooks into `ExperienceManager` and `MoneyManager` via SuperBLT. Replaces the ori
 ## Changelog
 
 ### v7.1
-- Updated author to Riutexu
-- Version bump
+- Autor actualizado a Riutexu
+- Incremento de versión
 
 ### v7.0
-- Initial mod version
-- XP multiplier (default x200)
-- Cash multiplier (default x20)
-- Offshore unaffected
+- Versión inicial del mod
+- Multiplicador de XP (por defecto x200)
+- Multiplicador de dinero (por defecto x20)
+- Offshore sin cambios
 
-## License
+## Licencia
 
-MIT License. See [LICENSE](LICENSE) for details.
+Licencia MIT. Consulta [LICENSE](LICENSE) para más detalles.
 
 ---
 
 <p align="center">
-  <sub>Made with <img src="https://skillicons.dev/icons?i=lua" width="14" alt="Lua" /> for PAYDAY 2</sub>
+  <sub>Creado con <img src="https://skillicons.dev/icons?i=lua" width="14" alt="Lua" /> para PAYDAY 2</sub>
 </p>
